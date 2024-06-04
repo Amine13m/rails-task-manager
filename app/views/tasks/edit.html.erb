@@ -1,0 +1,9 @@
+<link href="style.css" rel="stylesheet">
+<h2> Edit your Task<h2>
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <button class="styled-button">submit</button>
+<% end %>
